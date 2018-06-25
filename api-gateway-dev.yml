@@ -1,11 +1,12 @@
-zuul:
-  routes:
-    myProduct:
-      path: /myProduct/**
-      serviceId: product
-      sensitiveHeaders:
-      #sesitiveHeaders 对cookie进行转发
+spring:
+  zuul:
+    routes:
+      myProduct:
+        path: /myProduct/**
+        serviceId: product
+        sensitiveHeaders:
+        #sesitiveHeaders 对cookie进行转发
 #忽略路由 ignored-patterns:
-management:
-  security:
-    enabled: false
+    management:
+      security:
+        enabled: false
